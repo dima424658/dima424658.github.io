@@ -1,0 +1,55 @@
+Package: luci-app-podkop
+Version: 0.7.16-r1
+Depends: libc, luci-base, podkop
+Provides: luci-app-podkop-any
+Source: feeds/base/podkop/luci-app-podkop
+SourceName: luci-app-podkop
+License: GPL-2.0-or-later
+Section: luci
+SourceDateEpoch: 1778603503
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 184320
+Filename: luci-app-podkop_0.7.16-r1_all.ipk
+Size: 33982
+SHA256sum: 481155c94ac3f31e2e125177f654378118f7809b89e09c1fd4b9df9e978bfba0
+Description:  LuCI podkop app
+
+Package: podkop
+Version: 0.7.16-r1
+Depends: libc, sing-box-extended, curl, jq, kmod-nft-tproxy, coreutils-base64, bind-dig
+Conflicts: https-dns-proxy, nextdns, luci-app-passwall, luci-app-passwall2
+Provides: podkop-any
+Source: feeds/base/podkop/podkop
+SourceName: podkop
+License: GPL-2.0-or-later
+Section: net
+SourceDateEpoch: 1778258980
+URL: https://podkop.net
+Maintainer: ITDog <podkop@itdog.info>
+Architecture: all
+Installed-Size: 204800
+Filename: podkop_0.7.16-r1_all.ipk
+Size: 35595
+SHA256sum: 61fb270d7b2be542cbd787e2c6955a205806cbe793fa675118b3f7249d3214b4
+Description:  Domain routing. Use of VLESS, Shadowsocks technologies
+
+Package: sing-box-extended
+Version: 1.13.11-r1
+Depends: libc
+Conflicts: sing-box
+Provides: sing-box-extended-any, sing-box
+Source: feeds/base/sing-box-extended
+SourceName: sing-box-extended
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1778622664
+URL: https://sing-box.sagernet.org/
+Architecture: aarch64_cortex-a53
+Installed-Size: 53811200
+Filename: sing-box-extended_1.13.11-r1_aarch64_cortex-a53.ipk
+Size: 17732286
+SHA256sum: 2e864240e30fdd207949e4c47c789e1cc979083d6a1914e3506188609fcd4469
+Description:  The universal proxy platform
+
