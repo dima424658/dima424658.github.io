@@ -1,72 +1,64 @@
-Package: luci-app-podkop
-Version: 0.7.17-r1
-Depends: libc, luci-base, podkop
-Provides: luci-app-podkop-any
-Source: feeds/base/podkop/luci-app-podkop
-SourceName: luci-app-podkop
+Package: luci-app-podkop-plus
+Version: 0.7.19.5
+Depends: libc, luci-base, podkop-plus
 License: GPL-2.0-or-later
 Section: luci
-SourceDateEpoch: 1779134302
-URL: https://github.com/openwrt/luci
-Maintainer: OpenWrt LuCI community
+URL: https://github.com/ushan0v/podkop-plus
+Maintainer: ushan0v <ushan0v@users.noreply.github.com>
 Architecture: all
-Installed-Size: 184320
-Filename: luci-app-podkop_0.7.17-r1_all.ipk
-Size: 33983
-SHA256sum: 69f3e2215f88cac404913a77fd7ed7973f4feb0ce5b6138342ae96f3bfb05d7e
-Description:  LuCI podkop app
+Installed-Size: 542720
+Filename: luci-app-podkop-plus_0.7.19.5_all.ipk
+Size: 102576
+SHA256sum: c90882e1d6ba27f8fea95d56eed72b0c539e85ce86182fff4be487132b28a304
+Description: Rule-based Podkop Plus LuCI app with hybrid sing-box + zapret orchestration
 
-Package: luci-i18n-podkop-ru
-Version: 26.129.17494~d8bd87a
-Depends: libc, luci-app-podkop
-Provides: luci-i18n-podkop-ru-any
-Source: feeds/base/podkop/luci-app-podkop
-SourceName: luci-app-podkop
+Package: luci-i18n-podkop-plus-ru
+Version: 0.7.19.5
+Depends: libc, luci-app-podkop-plus
 License: GPL-2.0-or-later
 Section: luci
-SourceDateEpoch: 1779134302
-Maintainer: ITDog <podkop@itdog.info>
+URL: https://github.com/ushan0v/podkop-plus
+Maintainer: ushan0v <ushan0v@users.noreply.github.com>
 Architecture: all
-Installed-Size: 30720
-Filename: luci-i18n-podkop-ru_26.129.17494~d8bd87a_all.ipk
-Size: 8208
-SHA256sum: 44edc5789a2c1eb8fe2def922b50fd109785d5519822d69a964951fb09f2ef03
-Description:  Translation for luci-app-podkop - Русский (Russian)
+Installed-Size: 51200
+Filename: luci-i18n-podkop-plus-ru_0.7.19.5_all.ipk
+Size: 14887
+SHA256sum: aa8391729776202e7f2ecbedd9c669d639ed10dc6f5c87c8d889e1125f092dbd
+Description: Translation for luci-app-podkop-plus - Русский (Russian)
 
-Package: podkop
-Version: 0.7.17-r1
-Depends: libc, sing-box-extended, curl, jq, kmod-nft-tproxy, coreutils-base64, bind-dig
-Conflicts: https-dns-proxy, nextdns, luci-app-passwall, luci-app-passwall2
-Provides: podkop-any
-Source: feeds/base/podkop/podkop
-SourceName: podkop
+Package: podkop-plus
+Version: 0.7.19.5
+Depends: libc, sing-box, curl, ucode, ucode-mod-fs, kmod-nft-tproxy, coreutils-base64, coreutils-sort, bind-dig, nftables, kmod-nft-nat, kmod-nft-offload
 License: GPL-2.0-or-later
 Section: net
-SourceDateEpoch: 1779134302
-URL: https://podkop.net
-Maintainer: ITDog <podkop@itdog.info>
+URL: https://github.com/ushan0v/podkop-plus
+Maintainer: ushan0v <ushan0v@users.noreply.github.com>
 Architecture: all
-Installed-Size: 204800
-Filename: podkop_0.7.17-r1_all.ipk
-Size: 35605
-SHA256sum: 989896bfc381e0266a388128faf5245b04fd3478c5a7ae2e742a05556798ef34
-Description:  Domain routing. Use of VLESS, Shadowsocks technologies
+Installed-Size: 921600
+Filename: podkop-plus_0.7.19.5_all.ipk
+Size: 159806
+SHA256sum: 8e7a7669fa201928303160fb4f392c5f025a252919b8dabd9bbba5511508147e
+Description: Rule-based Podkop Plus backend with hybrid sing-box + zapret orchestration
 
 Package: sing-box-extended
-Version: 1.13.12-r1
-Depends: libc
+Version: 2.3.2-r1
+Depends: libc, ca-bundle, kmod-inet-diag, kmod-tun
 Conflicts: sing-box
 Provides: sing-box-extended-any, sing-box
 Source: feeds/base/sing-box-extended
 SourceName: sing-box-extended
-License: GPL-3.0
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
 Section: net
+Require-User: sing-box=5566:sing-box=5566
 SourceDateEpoch: 1778622664
-URL: https://sing-box.sagernet.org/
+URL: https://sing-box.sagernet.org
+Maintainer: Van Waholtz <brvphoenix@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 53882880
-Filename: sing-box-extended_1.13.12-r1_aarch64_cortex-a53.ipk
-Size: 17753523
-SHA256sum: d4dd5f59b117a5afb20134ad0e837d8f141d98cf69ccbe66ce882c632baa4dc0
-Description:  The universal proxy platform
+Installed-Size: 37509120
+Filename: sing-box-extended_2.3.2-r1_aarch64_cortex-a53.ipk
+Size: 12716024
+SHA256sum: fe705bfc3a5b35f6addaa0090e5f944bc8181f482c9f14ca7961877a2c790484
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+ ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
