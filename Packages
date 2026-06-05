@@ -10,10 +10,10 @@ SourceDateEpoch: 1780446522
 URL: https://github.com/openwrt/luci
 Maintainer: ushan0v <ushan0v@users.noreply.github.com>
 Architecture: all
-Installed-Size: 440320
+Installed-Size: 542720
 Filename: luci-app-podkop-plus_0.7.19.5-r1_all.ipk
-Size: 91156
-SHA256sum: 0be70f9121f3ef6e9e0c68c944dd4acc16155d419f778460f64d6e211e7f6d37
+Size: 102628
+SHA256sum: 0b390d2a686f73fae66ebfd740d2337873bcf96eb7f715777bffc4b970093fb6
 Description:  Rule-based Podkop Plus LuCI app with hybrid sing-box + zapret orchestration
 
 Package: luci-i18n-podkop-plus-ru
