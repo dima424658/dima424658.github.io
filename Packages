@@ -34,7 +34,7 @@ Description:  Translation for luci-app-podkop-plus - Русский (Russian)
 
 Package: podkop-plus
 Version: 0.7.19.5-r1
-Depends: libc, sing-box-extended, curl, ucode, ucode-mod-fs, kmod-nft-tproxy, coreutils-base64, coreutils-sort, bind-dig, kmod-nft-nat, kmod-nft-offload
+Depends: libc, sing-box, curl, ucode, ucode-mod-fs, kmod-nft-tproxy, coreutils-base64, coreutils-sort, bind-dig, kmod-nft-nat, kmod-nft-offload
 Conflicts: https-dns-proxy, nextdns, luci-app-passwall, luci-app-passwall2
 Provides: podkop-plus-any
 Source: feeds/base/podkop-plus/podkop
@@ -47,29 +47,7 @@ Maintainer: ushan0v <ushan0v@users.noreply.github.com>
 Architecture: all
 Installed-Size: 921600
 Filename: podkop-plus_0.7.19.5-r1_all.ipk
-Size: 160007
-SHA256sum: 8702684e5e3511ec1659ed808c6f6e00aeb76f87dd9a078d450d2c9994289ccf
+Size: 159999
+SHA256sum: 7c9292c366811a9bb6e594ab28831cdb7b5253a44de1c376e8cb6a94b8f18d7c
 Description:  Rule-based Podkop Plus backend with hybrid sing-box + zapret orchestration
-
-Package: sing-box-extended
-Version: 2.3.2-r1
-Depends: libc, ca-bundle, kmod-inet-diag, kmod-tun
-Conflicts: sing-box
-Provides: sing-box-extended-any, sing-box
-Source: feeds/base/sing-box-extended
-SourceName: sing-box-extended
-License: GPL-3.0-or-later
-LicenseFiles: LICENSE
-Section: net
-Require-User: sing-box=5566:sing-box=5566
-SourceDateEpoch: 1778622664
-URL: https://sing-box.sagernet.org
-Maintainer: Van Waholtz <brvphoenix@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 37509120
-Filename: sing-box-extended_2.3.2-r1_aarch64_cortex-a53.ipk
-Size: 12716024
-SHA256sum: fe705bfc3a5b35f6addaa0090e5f944bc8181f482c9f14ca7961877a2c790484
-Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
- ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
